@@ -1,5 +1,5 @@
-# Plugin generator for Stud.IP
+# Plugin generator plugin for Stud.IP
 
-## Current status
+## Documentation
 
-Secret
+TODO

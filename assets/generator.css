@@ -1,0 +1,19 @@
+.generator .navigation button {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  min-width: 0;
+  padding: 0;
+  text-align: center; }
+.generator .navigation thead th {
+  text-align: center; }
+.generator .navigation tbody td:first-child, .generator .navigation tbody td:last-child {
+  text-align: center;
+  visibility: hidden; }
+.generator .navigation tbody tr:hover td:first-child, .generator .navigation tbody tr:hover td:last-child {
+  visibility: visible; }
+.generator .navigation tbody input[type=text] {
+  width: 100%; }
+.generator .navigation tfoot td {
+  text-align: right; }

@@ -1,0 +1,3 @@
+jQuery ($) ->
+    $('.generator').protect().generator()
+    

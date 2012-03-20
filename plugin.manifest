@@ -1,0 +1,6 @@
+pluginname=Plugin-Generator
+pluginclassname=PluginGenerator
+description=Helps you build a plugin by creating the basic structure
+origin=UOL
+version=0.7
+studipMinVersion=2.0

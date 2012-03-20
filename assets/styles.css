@@ -1,0 +1,40 @@
+/* CSS */
+.light {
+  opacity: 0.5; }
+
+.centered {
+  text-align: center; }
+
+.ui-sortable-placeholder {
+  background: #444444; }
+
+.icon {
+  background-image: url(assets/images/vendor/jquery-ui/ui-icons_217bc0_256x240.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 16px;
+  overflow: hidden;
+  text-indent: -99999px;
+  width: 16px; }
+  .icon.move {
+    background-position: -128px -32px;
+    cursor: move; }
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .steps li {
+    color: #444444;
+    text-indent: 18px; }
+    .steps li.current {
+      background: url(assets/images/icons/16/black/arr_1right.png) left center no-repeat; }
+    .steps li.passed {
+      color: black;
+      font-weight: bold; }
+
+/* TODO Describe this */
+label.open {
+  background: url(assets/images/icons/16/grey/arr_1down.png) 2px center no-repeat; }
+label.closed {
+  background: url(assets/images/icons/16/grey/arr_1right.png) 2px center no-repeat; }

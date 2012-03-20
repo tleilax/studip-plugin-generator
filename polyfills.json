@@ -1,0 +1,34 @@
+{
+    "csrfprotection" : {
+        "name"        : "CSRFProtection",
+        "description" : "",
+        "since"       : "2.1",
+        "lib"         : "CSRFProtection.php"
+    },
+    "skiplinks" : {
+        "name"        : "SkipLinks",
+        "description" : "",
+        "since"       : "2.1",
+        "lib"         : "SkipLinks.php"
+    },
+
+    "updateinformation" : {
+        "name"        : "UpdateInformation",
+        "description" : "",
+        "since"       : "2.2",
+        "lib"         : {
+            "UdateInformation.php" : "UpdateInformation.class.php"
+        }
+    },
+
+    "buttons" : {
+        "name"        : "Button / LinkButton",
+        "description" : "",
+        "since"       : "2.3",
+        "assets"      : "buttons.css",
+        "lib"         : {
+            "Button.php"     : "Button.class.php",
+            "LinkButton.php" : "LinkButton.class.php"
+        }
+    }    
+}

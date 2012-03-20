@@ -1,0 +1,32 @@
+.button
+    &[name=back]
+        white-space: normal
+        &:before
+            background: url(assets/images/icons/16/blue/arr_1left.png) no-repeat
+            content: " "
+            float: left
+            height: 16px
+            margin: -1px 8px 0 -4px
+            width: 16px
+
+    &[name=forward], &[name=action]
+        white-space: normal
+        &:after
+            background-repeat: no-repeat
+            content: " "
+            float: right
+            height: 16px
+            width: 16px
+
+    &[name=forward]:after
+        margin: -1px -4px 0 8px
+        background-image: url(assets/images/icons/16/blue/arr_1right.png)
+    &[name=action][value=download]:after
+        margin: -1px -4px 0 8px
+        background-image: url(assets/images/icons/16/blue/download.png)
+    &[name=action][value=install]:after
+        margin: -1px -4px 0 8px
+        background-image: url(assets/images/icons/16/blue/plugin.png)
+    &[name=action][value=display]:after
+        margin: -1px -4px 0 8px
+        background-image: url(assets/images/icons/16/blue/code.png)
