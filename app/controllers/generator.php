@@ -191,7 +191,7 @@ class GeneratorController extends PluginGeneratorController {
             'controller' => $this,
         );
         $progress = $this->get_template_factory()->render('infobox-route', $variables);
-        $this->setInfoboxImage($this->dispatcher->plugin->getPluginURL() . '/assets/images/puzzle.png')
+        $this->setInfoboxImage($this->dispatcher->plugin->getPluginURL() . '/assets/images/puzzle.jpg')
              ->addToInfobox(_('Fortschritt'), $progress)
              ->addToInfobox(_('Aktionen'),
                             sprintf('<a href="%s">Reset</a>', $this->url_for('generator/' . $step . '?reset=1')),

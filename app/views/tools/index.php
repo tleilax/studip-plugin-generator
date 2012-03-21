@@ -1,1 +1,0 @@
-tools, plugin aus verzeichnis/von github installieren
