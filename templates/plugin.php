@@ -1,5 +1,4 @@
 <?="<?php\n"?>
-# require 'bootstrap.php';
 
 /**
  * <?= $data['pluginclassname'] ?>.class.php

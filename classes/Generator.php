@@ -302,12 +302,8 @@ class Generator
 
     function display()
     {
-        echo '<dl>';
-        foreach ($this->files as $file => $content) {
-            printf('<dt>%s</dt>', $file);
-            printf('<dd><pre>%s</pre></dd>', htmlentities($content));
-        }
-        echo '</dl>';
+		$files = $this->files;
+		require dirname(__FILE__) . '/../templates/display.php';
         die;
     }
 
