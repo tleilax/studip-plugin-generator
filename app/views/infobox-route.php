@@ -1,7 +1,7 @@
 <?
 $steps = array(
-    'manifest'   => _('Manifest'),
-    'details'    => _('Details'),
+    'manifest'   => _('Grunddaten'),
+    'details'    => _('Weitere Angaben'),
     'assets'     => _('Zusätzliche Dateien'),
     'navigation' => _('Navigation'),
     'icon'       => _('Icon'),

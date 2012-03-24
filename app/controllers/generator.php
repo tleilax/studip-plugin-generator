@@ -190,7 +190,9 @@ class GeneratorController extends PluginGeneratorController {
             'step'       => $step,
             'controller' => $this,
         );
-        $progress = $this->get_template_factory()->render('infobox-route', $variables);
+        
+        $factory = new Flexi_TemplateFactory($this->dispatcher->plugin->getPluginPath() . '/app/views/');
+        $progress = $factory->render('infobox-route', $variables);
         $this->setInfoboxImage($this->dispatcher->plugin->getPluginURL() . '/assets/images/puzzle.jpg')
              ->addToInfobox(_('Fortschritt'), $progress)
              ->addToInfobox(_('Aktionen'),

@@ -15,7 +15,9 @@ class Plugingenerator extends StudIPPlugin implements SystemPlugin
     {
         parent::__construct();
 
-        $this->includePolyfills();
+        require_once 'polyfills/Button.php';
+        require_once 'polyfills/LinkButton.php';
+        PageLayout::addStylesheet($this->getPluginURL() . '/polyfills/buttons.css');
 
         $navigation = new AutoNavigation(_('Plugin-Generator'));
         $navigation->setURL(PluginEngine::GetLink($this, array(), ''));

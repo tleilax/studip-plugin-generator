@@ -1,5 +1,4 @@
 <?
-use Studip\Button, Studip\LinkButton;
 $steps = words('manifest more assets navigation icon polyfill');
 ?>
 <form action="<?= $controller->url_for('generator/' . $step) ?>" method="post"
