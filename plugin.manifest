@@ -1,5 +1,5 @@
 pluginname=Plugin-Generator
-pluginclassname=PluginGenerator
+pluginclassname=Plugingenerator
 description=Helps you build a plugin by creating the basic structure
 origin=UOL
 version=0.7
