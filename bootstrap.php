@@ -8,7 +8,7 @@
 
     function uol_pg_autoload($name)
     {
-        require dirname(__FILE__) . '/classes/' . $name . '.php';
+        include dirname(__FILE__) . '/classes/' . $name . '.php';
     }
     spl_autoload_register('uol_pg_autoload');
     
