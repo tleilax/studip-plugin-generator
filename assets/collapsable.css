@@ -1,0 +1,25 @@
+/* collapsable */
+.collapsable legend {
+	background-image: url(assets/images/arr_1down.png);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.collapsed {
+	background: none !important;
+	border: 0;
+}
+.collapsed div {
+	display: none !important;
+}
+.collapsed legend {
+	background-image: url(assets/images/arr_1right.png);
+	margin-bottom: 0;
+}
+
+label.open {
+	background: url(assets/images/arr_1down_black.png) 2px center no-repeat;
+}
+label.closed {
+	background: url(assets/images/arr_1right_black.png) 2px center no-repeat;
+}
