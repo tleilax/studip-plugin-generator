@@ -25,6 +25,7 @@ class TrailsEnvironment extends Environment
             rtrim(PluginEngine::getLink($this, array(), null), \'/\'),
             \'' . $this->getDefaultController() . '\'
         );
+        $dispatcher->plugin = $this;
         $dispatcher->dispatch($unconsumed_path);
     }
 ';
