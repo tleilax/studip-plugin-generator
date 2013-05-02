@@ -85,6 +85,25 @@ class ' . $name . 'Controller extends StudipController
         $layout = $GLOBALS[\'template_factory\']->open(\'layouts/base\');
         $this->set_layout($layout);
     }
+
+    // customized #url_for for plugins
+    function url_for($to)
+    {
+        $args = func_get_args();
+
+        # find params
+        $params = array();
+        if (is_array(end($args))) {
+            $params = array_pop($args);
+        }
+
+        # urlencode all but the first argument
+        $args = array_map("urlencode", $args);
+        $args[0] = $to;
+
+        return PluginEngine::getURL($this->dispatcher->plugin, $params, join("/", $args));
+    }
+
 ' . $temp . '
 }';
     }
