@@ -17,6 +17,7 @@ CODE;
 			rtrim(PluginEngine::getLink(\$this, array(), null), '/'),
 			'show'
 		);
+        \$dispatcher->plugin = \$this;
 		\$dispatcher->dispatch(\$unconsumed_path);
 	}
 CODE;
