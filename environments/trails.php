@@ -12,13 +12,24 @@ CODE;
 	function get_main_function_template () {
 		return <<<CODE
 	public function perform(\$unconsumed_path) {
+		\$this->setupAutoload();
 		\$dispatcher = new Trails_Dispatcher(
 			\$this->getPluginPath(),
 			rtrim(PluginEngine::getLink(\$this, array(), null), '/'),
 			'show'
 		);
-        \$dispatcher->plugin = \$this;
+		\$dispatcher->plugin = \$this;
 		\$dispatcher->dispatch(\$unconsumed_path);
+	}
+
+	private function setupAutoload() {
+		if (class_exists("StudipAutoloader")) {
+			StudipAutoloader::addAutoloadPath(dirname(__FILE__) . '/models');
+		} else {
+			spl_autoload_register(function (\$class) {
+				include_once dirname(__FILE__) . \$class . '.php';
+			});
+		}
 	}
 CODE;
 	}
