@@ -24,10 +24,10 @@ CODE;
 
 	private function setupAutoload() {
 		if (class_exists("StudipAutoloader")) {
-			StudipAutoloader::addAutoloadPath(dirname(__FILE__) . '/models');
+			StudipAutoloader::addAutoloadPath(__DIR__ . '/models');
 		} else {
 			spl_autoload_register(function (\$class) {
-				include_once dirname(__FILE__) . \$class . '.php';
+				include_once __DIR__ . \$class . '.php';
 			});
 		}
 	}
