@@ -62,7 +62,19 @@ class <?= $pluginclassname ?> extends StudIPPlugin implements <?= implode(', ', 
 
 <?php endif; ?>
 <?php if (in_array('StandardPlugin', $interface)): ?>
+<?php if ($studipMinVersion >= '2.4'): ?>
+	public function getTabNavigation($course_id) {
+		return array();
+	}
+
+	public function getNotificationObjects($course_id, $since, $user_id) {
+		return array();
+	}
+
+	public function getIconNavigation($course_id, $last_visit, $user_id) {
+<?php else: ?>
 	public function getIconNavigation($course_id, $last_visit) {
+<?php endif; ?>
 		// ...
 	}
 
