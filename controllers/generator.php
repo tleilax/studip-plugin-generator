@@ -12,7 +12,7 @@
 			'StudienmodulManagementPlugin' => 'Studienmodulsuche',
 			'SystemPlugin'                 => 'Systemweite Erweiterungen',
 		),
-		'versions'   => array('2.0', '2.1', '2.2', '2.3'),
+		'versions'   => array('2.0', '2.1', '2.2', '2.3', '2.4', '2.5'),
 	), request('plugin', array(
 		'assets'                    => '',
 		'css'                       => 'assets/style.css',
@@ -21,7 +21,7 @@
 		'interface'                 => array('SystemPlugin'),
 		'js'                        => 'assets/application.js',
 		'js_content'                => "(function ($) {\n\n\t// JS\n\n}(jQuery));",
-		'studipMinVersion'          => '2.1',
+		'studipMinVersion'          => '2.4',
 		'tab'                       => 4,
 		'uninstalldbscheme_content' => '-- SQL',
 		'version'                   => '0.1a',
