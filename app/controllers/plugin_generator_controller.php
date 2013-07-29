@@ -4,7 +4,7 @@ class PluginGeneratorController extends StudipController
     /**
      * Spawns a new infobox variable on this object, if neccessary.
      **/
-    private function populateInfobox()
+    protected function populateInfobox()
     {
         if (!isset($this->infobox)) {
             $this->infobox = array(
