@@ -1,16 +1,22 @@
 <?php
 class ShowController extends StudipController {
 
+    public function __construct($dispatcher)
+    {
+        parent::__construct($dispatcher);
+        $this->plugin = $dispatcher->plugin;
+    }
+
     public function before_filter(&$action, &$args) {
 
-		$this->set_layout($GLOBALS['template_factory']->open('layouts/base_without_infobox'));
-//		PageLayout::setTitle('');
+        $this->set_layout($GLOBALS['template_factory']->open('layouts/base_without_infobox'));
+//      PageLayout::setTitle('');
 
     }
 
     public function index_action() {
 
-		$this->answer = 'Yes';
+        $this->answer = 'Yes';
 
     }
 
@@ -26,9 +32,9 @@ class ShowController extends StudipController {
         }
 
         # urlencode all but the first argument
-        $args = array_map("urlencode", $args);
+        $args = array_map('urlencode', $args);
         $args[0] = $to;
 
-        return PluginEngine::getURL($this->dispatcher->plugin, $params, join("/", $args));
+        return PluginEngine::getURL($this->dispatcher->plugin, $params, join('/', $args));
     } 
 }
