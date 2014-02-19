@@ -80,7 +80,7 @@ class Generator implements ArrayAccess {
 
 		// Add stars
 		$star = imagecreatefrompng($width > 16 ? 'assets/images/star_2x.png' : 'assets/images/star.png');
-		$offs = $width > 16 ? 20 : 10;
+		$offs = $width > 16 ? 32 : 10;
 		for ($y = 0; $y < $offs; $y++) {
 			for ($x = 0; $x < $offs; $x++) {
 				$pixel = imagecolorat($star, $x, $y);
