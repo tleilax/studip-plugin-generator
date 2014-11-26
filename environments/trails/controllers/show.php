@@ -7,17 +7,17 @@ class ShowController extends StudipController {
         $this->plugin = $dispatcher->plugin;
     }
 
-    public function before_filter(&$action, &$args) {
-
-        $this->set_layout($GLOBALS['template_factory']->open('layouts/base_without_infobox'));
+    public function before_filter(&$action, &$args)
+    {
+        parent::before_filter($action, $args);
+        
+        $this->set_layout($GLOBALS['template_factory']->open('layouts/base_without_infobox.php'));
 //      PageLayout::setTitle('');
-
     }
 
-    public function index_action() {
-
+    public function index_action()
+    {
         $this->answer = 'Yes';
-
     }
 
     // customized #url_for for plugins
