@@ -1,15 +1,19 @@
 <?="<?php\n"?>
-class <?= $class ?> extends DBMigration {
+class <?= $class ?> extends Migration
+{
+    public function description ()
+    {
+        // ...
+    }
 
-	public function description () {
-		// ...
-	}
+    public function up ()
+    {
+        // ...
+    }
 
-	public function up () {
-		// ...
-	}
-	
-	public function down () {
-		// ...
-	}
+    public function down ()
+    {
+        // ...
+    }
 }
+
